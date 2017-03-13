@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,300,500,700');
+
+:root {
+  --white: #FFF;
+  --black: #000;
+  --eggshell: #EEE8D6;
+  --darkblue: #022933;
+  --yellow:   #F3D350;
+  --blue:     #0076A3;
+  --green:    #BFC406;
+  --orange:   #DC762B;
+  --red:      #D14348;
+  --purple:   #6D73C2;
+
+  --color-light: var(--white);
+  --color-dark: var(--black);
+  --color-main: var(--darkblue);
+  --color-background: var(--color-light);
+  --color-links: color(var(--blue) lightness(+20%));
+  --color-navigation-links: var(--blue);
+
+
+  --font-size-base: 1.3rem;
+  --line-height-base: 150%;
+  --font-primary: 'Work Sans', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-weight-light: 100;
+  --font-weight-normal: 300;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  --viewport-small: screen and (min-width: 576px);
+  --viewport-medium: screen and (min-width: 768px);
+  --viewport-large: screen and (min-width: 992px);
+  --viewport-extralarge: screen and (min-width: 1200px);
+
+  --container-default-width: 90%;
+  --container-max-width: 1200px;
+
+  --width-small: 576px;
+  --width-medium: 768px;
+  --width-large: 992px;
+  --width-extralarge: 1200px;
+  --width-max: var(--width-extralarge);
+
+  --default-viewport-height: 75vh;
+
+
+  --centered: {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  };
+
+  --width-standard: {
+    width: var(--container-default-width);
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+  }
+
+  --video-backgrounds: {
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+} /*root*/
+
+@custom-media --viewport-small (width >= 576px);
+@custom-media --viewport-medium (width >= 768px);
+@custom-media --viewport-large (width >= 992px);
+@custom-media --viewport-extralarge (width >= 1200px);
+
+@custom-selector :--headings h1, h2, h3, h4, h5, h6;
