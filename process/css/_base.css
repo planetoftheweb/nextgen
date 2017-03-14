@@ -7,19 +7,19 @@
 }
 
 body {
-  color: #EEE8D6;
-  background-color: #0076A3;
+  color: var(--color-main);
+  background-color: var(--color-background);
 
-  font-family: "Work Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-weight: 300;
-  font-size: 1.3rem;
-  line-height: 150%;
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
   margin: 0;
 }
 
 a {
-  color: #F3D350;
-  font-weight: 300;
+  color: var(--color-links);
+  font-weight: var(--font-weight-medium);
   text-decoration: none;
 }
 
@@ -43,5 +43,7 @@ ul li {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-weight: 500;
+  font-weight: var(--font-weight-medium);
+  margin-top: 0;
+  margin-bottom: 1rem;
 }

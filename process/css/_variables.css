@@ -1,0 +1,29 @@
+:root {
+  --white: #FFF;
+  --black: #000;
+
+  --eggshell: #EEE8D6;
+  --darkblue: #022933;
+  --yellow: #F3D350;
+  --blue: #0076A3;
+  --green: #BFC406;
+  --orange: #DC762B;
+  --red: #D14348;
+  --purple: #6D73C2;
+
+  --color-light: var(--white);
+  --color-dark: var(--black);
+  --color-main: var(--color-light);
+  --color-background: var(--blue);
+  --color-links: var(--yellow);
+  --color-navigation-links: var(--blue);
+
+  --font-size-base: 1.3rem;
+  --line-height-base: 150%;
+  --font-primary: "Work Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  --font-weight-light: 100;
+  --font-weight-normal: 300;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+} /* root */
