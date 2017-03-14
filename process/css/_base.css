@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,300,500,700');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: #EEE8D6;
+  background-color: #0076A3;
+
+  font-family: "Work Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 1.3rem;
+  line-height: 150%;
+  margin: 0;
+}
+
+a {
+  color: #F3D350;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: .5rem;
+  margin-left: 1rem;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 500;
+}
