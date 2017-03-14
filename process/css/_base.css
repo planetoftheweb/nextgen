@@ -44,15 +44,7 @@ ul li {
 
 :--headings {
   font-weight: var(--font-weight-medium);
+  line-height: calc(var(--line-height-base)-50%);
   margin-top: 0;
   margin-bottom: 1rem;
-}
-
-:--headings:matches(.feature-description-headline) {
-  color: var(--green);
-}
-
-.feature:not(#history, #ask) {
-  background: var(--darkblue);
-  padding: 30px;
 }
