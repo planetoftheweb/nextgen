@@ -26,4 +26,6 @@
   --font-weight-normal: 300;
   --font-weight-medium: 500;
   --font-weight-bold: 700;
+
+  @custom-selector :--headings h1, h2, h3, h4, h5, h6;
 } /* root */
