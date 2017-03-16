@@ -6,6 +6,27 @@
   align-content: space-between;
   height: 100vh;
 
-  background: url(../images/hero/appwoman.jpg) no-repeat center bottom;
-  background-size: cover;
-}
+  background: linear-gradient(
+   rgba(0,0,0,0) 50%,rgba(0,0,0,.8) 90%   
+  ),
+    url(../images/hero/appwoman.jpg) no-repeat center bottom;
+    background-size: cover;
+
+  & .header-info {
+    width: 100%;
+    text-align: center;
+
+    & .header-info-headline {
+      font-size: calc(var(--font-size-base)*2.5);
+    } /* header-info-headline */
+
+    & .header-info-subheadline {
+      font-size: calc(var(--font-size-base)*1.5);
+    }/* header-info-subheadline */
+
+    & a:any-link {
+      font-size: calc(var(--font-size-base)*1.7);
+    } /* a:any-link */
+
+  } /* header-info */
+} /* header */
