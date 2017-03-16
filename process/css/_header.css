@@ -1,0 +1,11 @@
+.header {
+  color: var(--color-main);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  height: 100vh;
+
+  background: url(../images/hero/appwoman.jpg) no-repeat center bottom;
+  background-size: cover;
+}
