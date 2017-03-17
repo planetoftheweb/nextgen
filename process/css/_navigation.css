@@ -1,0 +1,48 @@
+.nav {
+  @apply --width-standard;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+
+  @media (--viewport-small) {
+    flex-direction: row;
+  } /* viewport-small */
+
+  & .branding {
+    margin-left: auto;
+    width: 80px;
+
+    @media (--viewport-small) {
+      width: 60px;
+    } /* viewport-small */
+  } /* branding */
+
+  & .navbar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+
+    @media (--viewport-small) {
+      flex-direction: row;
+      justify-content: flex-end;
+    } /* viewport-small */
+
+    & a {
+      font-size: calc(var(--font-size-base)*.9);
+      color: var(--red);
+      text-align: right;
+      text-decoration: none;
+
+      &:hover {
+        color: var(--orange);
+      } /* hover */
+
+      @media (--viewport-small) {
+        padding-left: calc(var(--font-size-base)*.6);
+        justify-content: flex-end;
+      } /* viewport-small */
+    } /* a */
+  } /* navbar */
+
+} /* nav */
