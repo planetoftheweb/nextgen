@@ -27,5 +27,14 @@
   --font-weight-medium: 500;
   --font-weight-bold: 700;
 
+  --container-default-width: 90%;
+  --container-max-width: 1200px;
+
+  --width-standard: {
+    width: var(--container-default-width);
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+  }
+
   @custom-selector :--headings h1, h2, h3, h4, h5, h6;
 } /* root */

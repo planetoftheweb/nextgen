@@ -18,15 +18,20 @@
 
     & .header-info-headline {
       font-size: calc(var(--font-size-base)*2.5);
+      @apply --width-standard;
     } /* header-info-headline */
 
     & .header-info-subheadline {
       font-size: calc(var(--font-size-base)*1.5);
+      @apply --width-standard;
     }/* header-info-subheadline */
 
-    & a:any-link {
-      font-size: calc(var(--font-size-base)*1.7);
-    } /* a:any-link */
+    & .header-info-text {
+      @apply --width-standard;
 
+      & a:any-link {
+        font-size: calc(var(--font-size-base)*1.7);
+      } /* a:any-link */
+    }/* header-info-text */
   } /* header-info */
 } /* header */
