@@ -1,0 +1,41 @@
+.feature {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+
+  & .feature-description {
+    @apply --width-standard;
+
+    & .feature-description-headline {
+      font-size: calc(var(--font-size-base)*1.8);
+      color: var(--yellow);
+    } /* feature-description-headline */
+
+    & .feature-description-text {
+      font-size: calc(var(--font-size-base)*.9);
+      line-height: calc(var(--line-height-base)-10%);
+    } /* feature-description-text */
+  } /* feature-description */
+} /* feature */
+
+#profile.feature {
+  background: linear-gradient(var(--red), var(--orange));
+}
+
+#history.feature {
+  background: linear-gradient(var(--blue), color(var(--green) shade(20%)));
+}
+
+#schedule.feature {
+  background: linear-gradient(var(--blue), color(var(--purple) shade(40%)) 50%);
+}
+
+#ask.feature {
+  background: linear-gradient(var(--red), color(var(--purple) shade(30%)));
+}
+
+#showcase.feature {
+  background: linear-gradient(var(--blue), color(var(--darkblue)));
+}
