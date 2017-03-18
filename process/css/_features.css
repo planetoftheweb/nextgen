@@ -10,6 +10,11 @@
     justify-content: center;
   }/* viewport-medium */
 
+  & .feature-phone {
+    @media(--viewport-medium) {
+      transform: rotateZ(15deg) scale(.8);
+    }
+  }/* .feature-phone */
 
   & .feature-description {
     @apply --width-standard;
@@ -40,7 +45,7 @@
 
       @media (--viewport-small) {
         font-size: calc(var(--font-size-base)*.9);
-        margin-right: 6px;
+        margin-right: 20%;
       } /* viewport-small */
 
       @media (--viewport-large) {
@@ -50,6 +55,27 @@
 
     } /* feature-description-text */
   } /* feature-description */
+
+  /* Modify each other feature */
+  &:nth-of-type(2n) {
+    @media(--viewport-medium) {
+      flex-direction: row-reverse;
+
+      & .feature-phone {
+        transform: rotateZ(-15deg) scale(.8);
+      } /* .feature-phone */
+
+      & .feature-description-headline {
+        margin-left: 20%;
+      } /* .feature-description-headline */
+
+      & .feature-description-text {
+        margin-left: 20%;
+        margin-right: 0;
+      } /* .feature-description-text */
+    } /* viewport-medium */
+  } /* nth-of-type */
+
 } /* feature */
 
 #profile.feature {
