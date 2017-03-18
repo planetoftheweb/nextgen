@@ -35,7 +35,7 @@
       text-decoration: none;
 
       &:hover {
-        color: var(--orange);
+        color: color(var(--orange) saturation( + 20%));
       } /* hover */
 
       @media (--viewport-small) {

@@ -7,6 +7,7 @@
   height: 100vh;
 
   background: linear-gradient(
+    color(var(--yellow) a(20%)),
    rgba(0,0,0,0) 50%,rgba(0,0,0,.8) 90%   
   ),
     url(../images/hero/appwoman.jpg) no-repeat center bottom;
@@ -54,6 +55,7 @@
 
         & a:any-link {
           font-size: calc(var(--font-size-base)*1.2);
+          color: color(var(--color-links) tint(20%));
         } /* a:any-link */
       }/* viewport-small */
 
