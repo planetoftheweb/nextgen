@@ -13,6 +13,7 @@
   & .feature-phone {
     @media(--viewport-medium) {
       transform: rotateZ(15deg) scale(.8);
+      animation: videoin 1s;
     }
   }/* .feature-phone */
 
@@ -63,6 +64,7 @@
 
       & .feature-phone {
         transform: rotateZ(-15deg) scale(.8);
+        animation: videoin-reverse 1s;
       } /* .feature-phone */
 
       & .feature-description-headline {
