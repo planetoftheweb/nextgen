@@ -11,6 +11,7 @@
   }/* viewport-medium */
 
   & .feature-phone {
+    transform: scale(.7);
     @media(--viewport-medium) {
       transform: rotateZ(15deg) scale(.8);
       animation: videoin 1s;
