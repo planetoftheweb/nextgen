@@ -256,13 +256,13 @@
       </symbol>
   </svg>
 <header id="home" class="header">
-  <nav class="nav" role="navigation">
+  <nav class="nav" role="navigation" data-gumshoe-header>
       <div class="branding">
         <a href="#home">
           <img src="images/wisdompetlogo.svg" alt="Wisdom Pet Logo">
         </a>
       </div><!-- branding -->
-      <div class="navbar">
+      <div class="navbar" data-gumshoe>
           <a href="#profile">profile</a>
           <a href="#history">history</a>
           <a href="#schedule">schedule</a>
@@ -409,5 +409,15 @@
       </div><!-- footer-bottom -->
     </div><!-- footer-elements -->
 </footer><!-- footer -->
+<script src="js/gumshoe.min.js"></script>
+<script>
+  gumshoe.init({
+    callback: function(nav) {
+      if (nav) {
+        nav.target.querySelector('.feature-phone').style.animationPlayState = 'running';
+      }
+    }
+  });
+</script>
 </body>
 </html>
