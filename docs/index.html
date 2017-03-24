@@ -23,7 +23,7 @@
 <div class="reveal">
 <div class="slides">
 
-<section data-markdown="slides/demo.md" data-separator="\n---\n" data-separator-notes=">>">
+<section data-markdown="slides/01_02-About.md" data-separator="\n---\n" data-separator-notes=">>">
 </section>
 
 
@@ -73,11 +73,11 @@
 					{ src: 'js/plugin/markdown/marked.js' },
 					{ src: 'js/plugin/markdown/markdown.js' },
 					{ src: 'js/plugin/notes/notes.js', async: true },
-					{ src: 'js/plugin/highlight/highlight.js', async: true, callback: function() { 
+					{ src: 'js/plugin/highlight/highlight.js', async: true, callback: function() {
 						hljs.configure({
 							tabReplace: '  ', // 2 spaces
 						})
-						hljs.initHighlightingOnLoad(); 
+						hljs.initHighlightingOnLoad();
 					}}
 				]
 			});
@@ -90,7 +90,7 @@
 					item.dataset.trim = true;
 				}, this);
 			});
-			
+
 		</script>
 	</body>
 </html>
